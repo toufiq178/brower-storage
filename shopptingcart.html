@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping card</title>
+
+    <style>
+
+        button , input{
+            padding: 8px;
+            border-radius: 5px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <input id="product" type="text" placeholder="product">
+    <input id="quantity" type="text" placeholder="quantity">
+
+    <br>
+    <br>
+
+    <button onclick="submitCart()" id="submit-btn">submit</button>
+
+    <ul id="list-card">
+
+    </ul>
+
+    <!-- js -->
+    <script src="./cart.js"></script>
+
+</body>
+</html>
