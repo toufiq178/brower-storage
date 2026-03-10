@@ -94,21 +94,46 @@
 // console.log(bigNum);
 
 
-const users = [
-  {id:1, name:"Taj"},
-  {id:2, name:"Rahim"},
-  {id:3, name:"Karim"}
-];
+// const users = [
+//   {id:1, name:"Taj"},
+//   {id:2, name:"Rahim"},
+//   {id:3, name:"Karim"}
+// ];
 
 
-const obj  = users.reduce((acc , user ) => {
+// const obj  = users.reduce((acc , user ) => {
 
 
-  acc[user.id] = user.name
+//   acc[user.id] = user.name
   
-  return  acc
+//   return  acc
 
-} , {})
+// } , {})
 
 
-console.log(obj);
+// console.log(obj);
+
+
+
+
+
+// const fruits = ["apple", "banana", "apple", "mango", "banana", "apple","apple", "banana", "apple", "mango", "banana", "apple"];
+
+// const wordCount = fruits.reduce((acc , fruit) => {
+
+
+//   acc[fruit] = (acc[fruit] || 0)+1 
+
+//   return acc
+
+// }, {})
+
+// console.log(wordCount);
+
+
+
+const numbers = [1,2,3,4,5,6,7,8];
+
+const evenSum = numbers.reduce((acc , num) =>  num % 2 === 0? acc + num : acc , 0)
+
+console.log(evenSum);
